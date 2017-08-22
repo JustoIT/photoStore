@@ -6,9 +6,13 @@
                             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.ghwy" />
+    <context:component-scan base-package="com.ghwy.controller" />
 
     <!-- 导入数据库配置 -->
-    <import resource="spring-db.xml"/>
+    <import resource="com/ghwy/spring/spring-db.xml"/>
+
+    <import resource="com/ghwy/spring/spring-dao.xml"/>
+
+    <import resource="com/ghwy/spring/spring-service.xml"/>
 
 </beans>
